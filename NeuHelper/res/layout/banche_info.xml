@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+        <RelativeLayout 
+            android:id="@+id/select_type"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/textview_menu"
+            >
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <ImageView 
+                android:id="@+id/selected_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/student_"/>
+                <TextView 
+                    android:id="@+id/selected_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学生"/>
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+       
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/blue" />
+
+        <RelativeLayout
+            android:id="@+id/nanhu_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/textview_menu" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:text="@string/from_nanhu" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+
+        <RelativeLayout
+            android:id="@+id/hunnan_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/textview_menu" >
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/from_hunnan" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             <TextView
+		        android:id="@+id/from_tx"
+		        android:layout_width="0dp"
+		        android:layout_weight="4"
+		        android:layout_height="40dp"
+		        android:gravity="center"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingTop="1px"
+		        android:paddingBottom="1px"
+		        android:textSize="15sp" />
+             <TextView 
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:background="@color/white"/>
+	        <TextView
+	            android:id="@+id/fresh_info"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="40dp"
+		        android:textSize="15sp"
+		        android:clickable="true"
+		        android:gravity="center"
+		        android:paddingTop="1px"
+		        android:paddingBottom="1px"
+		        android:layout_gravity="center"
+		        android:textColor="@color/gray_join_us"
+		        android:background="@drawable/textview_fornewversion"
+		        android:text="更新\n信息"/>
+        </LinearLayout>
+	   
+    
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+        
+
+	    <LinearLayout
+	        android:id="@+id/stu_show"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="日期" />
+	
+	        <TextView
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/white" />
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="发车时间" />
+	
+	        <TextView
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/white" />
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="发车数量" />
+	    </LinearLayout>
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <TableLayout
+            android:id="@+id/tableInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </TableLayout>
+        
+    </ScrollView>
+    
+    
+
+</LinearLayout>

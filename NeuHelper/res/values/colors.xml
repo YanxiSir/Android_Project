@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="titlebar_bg_blue">#3b50ce</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#5677fc</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#434343</color>
+    <color name="black_half">#50000000</color>
+    <color name="dark_blue">#3b50ce</color>
+    <color name="main_top_title_blue">#0066CB</color>
+    <color name="category_focus_color">#aa000000</color>
+    <color name="login_green">#1AC045</color>
+    <color name="pressed_green">#1A7045</color>
+    <color name="register_gray">#CCCCCC</color>
+    <color name="red">#f00</color>
+    <color name="gray_light">#f2f2f2</color>
+    <color name="gray_join_us">#898989</color>
+    
+    <color name="dialog_bg">#50f2f2f2</color>
+
+</resources>
