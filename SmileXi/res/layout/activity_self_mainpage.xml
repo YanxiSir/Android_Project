@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+
+    <com.smilexi.sx.widget.PullToZoomListView
+        android:id="@+id/self_zoom_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.smilexi.sx.widget.PullToZoomListView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/self_main_life"
+            style="@style/SelfInfoLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_edge_low"
+                android:text="他的动态"
+                android:textColor="@color/line_left_color"
+                android:textSize="@dimen/line_left_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxWidth="100dp"
+                android:paddingRight="@dimen/padding_edge_low"
+                android:singleLine="true"
+                android:text="生活点滴"
+                android:textColor="@color/line_right_color"
+                android:textSize="@dimen/line_left_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/padding_edge_low"
+            android:layout_marginRight="@dimen/padding_edge_low"
+            android:background="@color/main_bg_gray" />
+        
+         <RelativeLayout
+            android:id="@+id/self_main_question"
+            style="@style/SelfInfoLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_edge_low"
+                android:text="他问过的问题"
+                android:textColor="@color/line_left_color"
+                android:textSize="@dimen/line_left_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxWidth="100dp"
+                android:paddingRight="@dimen/padding_edge_low"
+                android:singleLine="true"
+                android:text="不懂就问"
+                android:textColor="@color/line_right_color"
+                android:textSize="@dimen/line_left_size" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/main_bg_gray"
+            />
+        <RelativeLayout
+            android:id="@+id/self_main_contact"
+            style="@style/SelfInfoLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_edge_low"
+                android:text="联系方式"
+                android:textColor="@color/line_left_color"
+                android:textSize="@dimen/line_left_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxWidth="100dp"
+                android:paddingRight="@dimen/padding_edge_low"
+                android:singleLine="true"
+                android:text="常联系"
+                android:textColor="@color/line_right_color"
+                android:textSize="@dimen/line_left_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

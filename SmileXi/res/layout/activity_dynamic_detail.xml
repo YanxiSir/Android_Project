@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/item_split_line"
+        android:dividerPadding="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="pullFromEnd"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        ptr:ptrShowIndicator="false" >
+        
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+    <!--  <RelativeLayout 
+         android:id="@+id/detail_noreply_ll"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:visibility="gone" >
+         <TextView 
+             android:id="@+id/detail_noreply_text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableLeft="@drawable/meiyou"
+             android:drawablePadding="4dp"
+             android:layout_centerInParent="true"
+             android:textSize="14sp"
+             android:textColor="@color/item_light_txt"
+             android:text="还没有回复..."/>
+     </RelativeLayout> -->
+    
+     <LinearLayout 
+         android:id="@+id/detail_reply_ll"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="4dp"
+         android:background="@color/divider_line"
+         android:layout_alignParentBottom="true">
+         <EditText 
+             android:id="@+id/detail_reply_edittext"
+             android:layout_width="0dp"
+             android:layout_weight="4"
+             android:layout_height="wrap_content"
+             android:hint="评论一下"
+             android:padding="10dp"
+             android:maxLines="3"
+             android:background="@drawable/edittext_no_focus"
+             android:textColor="@color/black"
+             android:textSize="16sp"/>
+         <TextView 
+             android:id="@+id/detail_reply_btn"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="6dp"
+             android:paddingBottom="6dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:textSize="18sp"
+             android:clickable="true"
+             android:textColor="@color/white"
+             android:background="@drawable/main_corner_button"
+             android:text="回复"
+             />
+     </LinearLayout>
+
+</LinearLayout>

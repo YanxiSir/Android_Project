@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- login activity -->
+    <color name="login_background">#fffff0</color>
+    <color name="login_text_top">#efeadd</color>
+    <color name="login_text_bottom">#f4f1ec</color>
+    <color name="login_light_gray">#dfdcd8</color>
+    <color name="login_deep_gray">#d9cfba</color>
+    <color name="login_button_press">#0f5493</color>
+    <color name="login_button_default">#1069ad</color>
+    
+    <color name="titlebar_bg">#1069ad</color>
+    <color name="titlebar_text">#ffffff</color>
+    
+    <color name="main_bg">#fffff0</color>
+    <color name="main_bg_gray">#EBEBEB</color>
+    <color name="shadow_color">#333333</color>
+    <color name="press_shadow_color">#33878787</color>
+    <color name="left_color_gray">#333333</color>
+    <color name="right_color_gray">#a9b7b7</color>
+    
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    
+    <color name="line_press">#d3d3d3</color>
+    <color name="line_press_deep">#e3e3e3</color>
+    <color name="line_press_light">#f3f3f3</color>
+    <color name="line_left_color">#333333</color>
+    <color name="line_right_color">#a9b7b7</color>
+    
+    <color name="divider_line">#dfdcd8</color>
+    <color name="dividing_line_back">#dddddd</color>
+    
+    
+    <!-- 控件背景色 -->
+	<color name="loading_back">#aa000000</color>
+	
+	 <color name="gray_light_confirm_bg">#F6F6F6</color>
+	 <color name="gray_light_confirm_bd">#ECECEC</color>
+	 
+	 <color name="item_split_line">#dddddd</color>
+	 
+	 <!-- textview复制时颜色 -->
+	 <color name="textview_pressed">#eeeeee</color>
+	 <color name="textview_default">#f8f8f8</color>
+	 
+	 
+	 <!-- dynamic adapter -->
+	 <color name="item_normal_txt">#353535</color>
+	 <color name="item_blue_txt">#005da4</color>
+	 <color name="item_light_txt">#a9b7b7</color>
+	 
+	 <color name="black_light">#454545</color>
+	 <color name="text_gray">#8b8e8e</color>
+	 
+	 
+	 <color name="zan_bg">#87CEFA</color>
+	 <color name="filter_bg">#434e59</color>
+</resources>

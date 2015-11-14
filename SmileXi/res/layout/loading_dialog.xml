@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:background="@drawable/loading_dialog_bg"
+    android:minHeight="70dp"
+    android:minWidth="180dp"
+    android:orientation="horizontal"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/loading_dialog_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loading_icon" />
+
+    <TextView
+        android:id="@+id/loading_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <com.smilexi.sx.widget.RoundImageView
+                android:id="@+id/headImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                style="@style/shadow_style"
+                android:src="@drawable/defaultheader" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_light_gray"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/login_text_back"
+            android:paddingLeft="@dimen/padding_edge_normal"
+            android:paddingRight="@dimen/padding_edge_normal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_edge_normal"
+                android:paddingBottom="@dimen/padding_edge_normal">
+                <TextView 
+                    android:id="@+id/text_tel"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_12dp"
+                    android:paddingLeft="5dp"
+                    android:text="手机号"/>
+                <EditText 
+                    android:id="@+id/username"
+                    android:layout_toRightOf="@+id/text_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/label_16dp"
+                    android:paddingLeft="@dimen/padding_edge_large_more"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:hint="请输入手机号"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/login_deep_gray" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_edge_normal"
+                android:paddingBottom="@dimen/padding_edge_normal">
+                <TextView 
+                    android:id="@+id/text_pwd"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_12dp"
+                    android:paddingLeft="5dp"
+                    android:text="密码"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_toRightOf="@id/text_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_edge_large_more"
+                    android:textSize="@dimen/label_16dp"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_light_gray"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/padding_edge_normal"
+            android:text="登录"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/login_button"
+            android:textSize="@dimen/label_16dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <TextView 
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:clickable="true"
+            android:textColor="@color/login_button_default"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

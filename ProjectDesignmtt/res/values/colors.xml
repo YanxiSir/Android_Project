@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- login activity -->
+    <color name="login_background">#fffff0</color>
+    <color name="login_text_top">#efeadd</color>
+    <color name="login_text_bottom">#f4f1ec</color>
+    <color name="login_light_gray">#dfdcd8</color>
+    <color name="login_deep_gray">#d9cfba</color>
+    <color name="login_button_press">#a35303</color>
+    <color name="login_button_default">#F79709</color>
+    
+    <color name="default_bg">#F79709</color>
+    <color name="press_bg">#a35303</color>
+    
+    <color name="login_green">#00b386</color>
+    <color name="pressed_green">#339999</color>
+    
+    <color name="item_split_line">#dddddd</color>
+    
+     <color name="dark_green">#43CD80</color>
+     <color name="light_green">#4EEE94</color>
+     
+    <color name="main_bg">#fffff0</color>
+    <color name="main_bg_gray">#EBEBEB</color>
+    <color name="shadow_color">#333333</color>
+    <color name="left_color_gray">#333333</color>
+    <color name="right_color_gray">#a9b7b7</color>
+    
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#1196EE</color>
+    <color name="text_gray">#8e8e8e</color>
+    <color name="divider_line">#dfdcd8</color>
+    
+    <color name="titlebar_bg">#F79709</color>
+    
+    <color name="after_pressed">#FFA500</color>
+
+    <color name="line_left_text">#000</color>
+    <color name="divider_line_bg">#EEEEE0</color>
+    
+    <!-- 控件背景色 -->
+	<color name="loading_back">#aa000000</color>
+	<color name="titlebar_text">#000000</color>
+    <color name="titlebar_bg">#ffffff</color>
+    
+    
+    
+    <color name="holo_red_light_transparent">#aaff4444</color>
+    <color name="gray_light_confirm_bg">#F6F6F6</color>
+	 <color name="gray_light_confirm_bd">#ECECEC</color>
+	 
+	 <color name="shop_classify_color">#66dd0000</color>
+	  <color name="shop_classify_color_press">#88ee0000</color>
+	 
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp" >
+
+        <com.smilexi.sx.widget.RoundImageView
+            android:id="@+id/irp_userimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultheader" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/irp_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:text=""
+                android:textColor="@color/item_blue_txt"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/irp_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:textColor="@android:color/darker_gray"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/irp_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/reply_png"
+            android:drawablePadding="4dp"
+            android:gravity="fill"
+            android:text="回复"
+            android:textColor="@color/item_blue_txt"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/irp_touser_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="60dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/irp_touser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="马大胖"
+            android:textColor="@color/item_blue_txt"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/irp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:text="你在干什么呢？"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line_bg"
+    android:clickable="true"
+    android:padding="10dp"
+    android:id="@+id/adapter_menu_child_ll"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/adapter_menu_child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鸡肉饭"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:gravity="center"/>
+    <TextView 
+        android:id="@+id/adapter_menu_child_left_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余8份"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:gravity="center"/>
+    <TextView 
+        android:id="@+id/adapter_menu_child_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$12"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:gravity="center"/>
+
+</LinearLayout>

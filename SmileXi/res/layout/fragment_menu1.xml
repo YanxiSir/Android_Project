@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fra1_pinglun_ll"
+        style="@style/paddingTenTweenStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_bg"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fra1_pinglun_img_rel"
+            android:layout_width="@dimen/message_pic_width"
+            android:layout_height="@dimen/message_pic_width"
+            android:background="#08b859" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentDescribe"
+                android:src="@drawable/all_pinglun" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="评论"
+            android:textColor="@color/left_color_gray"
+            android:textSize="@dimen/message_text_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/red_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dayu" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/fra1_answer_ll"
+        style="@style/paddingTenTweenStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_bg"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fra1_answer_img_rel"
+            android:layout_width="@dimen/message_pic_width"
+            android:layout_height="@dimen/message_pic_width"
+            android:background="#56abe4" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentDescribe"
+                android:src="@drawable/all_answer" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="回答"
+            android:textColor="@color/left_color_gray"
+            android:textSize="@dimen/message_text_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/red_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dayu" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/fra1_zan_ll"
+        style="@style/paddingTenTweenStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_bg"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fra1_zan_img_rel"
+            android:layout_width="@dimen/message_pic_width"
+            android:layout_height="@dimen/message_pic_width"
+            android:background="#ea8010" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentDescribe"
+                android:src="@drawable/all_zan" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="赞"
+            android:textColor="@color/left_color_gray"
+            android:textSize="@dimen/message_text_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/red_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dayu" />
+    </LinearLayout>
+
+</LinearLayout>

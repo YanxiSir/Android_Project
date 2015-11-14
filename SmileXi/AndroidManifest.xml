@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smilexi.sx"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <permission
+        android:name="com.smilexi.sx.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.smilexi.sx.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 此权限用来显示反馈崩溃信息对话框 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 判断堆栈中是否有本应用的权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.smilexi.sx.app.AppManager"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_sx"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTitleBar" >
+
+        <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.smilexi.sx.receiver.NotifacationReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.smilexi.sx" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" > <!-- since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- since 1.3.5 -->
+                <category android:name="com.smilexi.sx" /> <!-- since 1.3.5 -->
+            </intent-filter> <!-- since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.smilexi.sx" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="520a82eb8dea79fcdd7f79ce" />
+
+        <!-- myself activity -->
+
+        <activity
+            android:name="com.smilexi.sx.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smilexi.sx.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.smilexi.sx.activity.RegisterActivity_1"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.ImproveSelfInfoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.SelfInfoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.ChangeSelfInfoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.CampusLifeDynamicActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.PublishActivity_1"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.smilexi.sx.activity.PhotoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.PhotoAlbums"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.PhotoAlbumToPicture"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.ImageViewActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.SelfMainPageActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.DynamicDetail"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.SelfContactWayActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.AttentionedUserList"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.PublishActivity_2"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.AnswerDetailActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.SearchActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.smilexi.sx.activity.NotifacationActivity"
+            android:label="@string/app_name" />
+
+        <!-- test activity -->
+        <activity
+            android:name="com.smilexi.sx.receiver.TestActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

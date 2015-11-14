@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/publish_1_edittitle_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingLeft="16dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/publish_1_edittitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_no_focus"
+            android:gravity="left"
+            android:hint="你要提什么问题?"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="20dp"
+        android:paddingTop="6dp" >
+
+        <EditText
+            android:id="@+id/public_1_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="这一刻，你在想什么..."
+            android:lines="5"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.smilexi.sx.widget.CGridView
+            android:id="@+id/public_1_selectimg_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/public_1_select_question_type_ll"
+        style="@style/paddingTenTweenStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line_bg"
+        android:clickable="true"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/public_1_select_question_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择问题类型"
+            android:textColor="@color/left_color_gray"
+            android:textSize="@dimen/line_left_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dayu" />
+    </LinearLayout>
+
+</LinearLayout>

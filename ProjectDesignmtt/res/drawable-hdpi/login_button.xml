@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!--点击背景-->  
+    <item android:state_pressed="true">  
+        <shape>  
+             <!--色值-->  
+            <solid android:color="@color/login_button_press" />  
+            <!--圆角-->  
+            <corners android:radius="4dp" />  
+            <stroke android:width="0.5dp" android:color="@color/divider_line"/>
+        </shape>  
+    </item>  
+    <!--默认背景-->  
+    <item>  
+        <shape>  
+            <solid android:color="@color/login_button_default" />  
+            <corners android:radius="4dp"/>
+            <stroke android:width="0.5dp" android:color="@color/divider_line"/>
+        </shape>  
+    </item>  
+</selector> 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="18dp" >
+            <TextView 
+                android:id="@+id/fra2_life_text"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="大学生活"
+                android:drawableLeft="@drawable/shenghuo"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:textSize="@dimen/titlebar_title_size"
+                android:textColor="@color/item_blue_txt"
+                android:background="@drawable/line_bg"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="18dp" >
+            <TextView 
+                android:id="@+id/fra2_question_text"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/da"
+                android:paddingLeft="16dp"
+                android:text="学习问答"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/titlebar_title_size"
+                android:textColor="@color/item_blue_txt"
+                android:background="@drawable/line_bg"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

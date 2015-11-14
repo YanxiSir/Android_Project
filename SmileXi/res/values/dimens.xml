@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="titlebar_height">48dp</dimen>
+    <dimen name="titlebar_title_size">18sp</dimen>
+    <dimen name="label_8dp">8dp</dimen>
+    <dimen name="label_10dp">10dp</dimen>
+    <dimen name="label_12dp">12dp</dimen>
+    <dimen name="label_14dp">14dp</dimen>
+    <dimen name="label_16dp">16dp</dimen>
+    <dimen name="label_18dp">18dp</dimen>
+    <dimen name="label_24dp">24dp</dimen>
+    <dimen name="padding_edge_lower">8dp</dimen>
+    <dimen name="padding_edge_low">10dp</dimen>
+    <dimen name="padding_edge_normal">16dp</dimen>
+    <dimen name="padding_edge_large">20dp</dimen>
+    <dimen name="padding_edge_large_more">30dp</dimen>
+    <dimen name="line_left_size">16sp</dimen>
+    <dimen name="line_right_size">10sp</dimen>
+    <dimen name="dividing_line_height">1dp</dimen>
+    <dimen name="item_line_size_1dp">1dp</dimen>
+    <dimen name="item_line_size">8dp</dimen>
+    
+    <!-- dynamic adapter -->
+    <dimen name="item_normal_txt">16sp</dimen>
+    <dimen name="item_small_txt">12sp</dimen>
+    
+    <dimen name="filter_width">150dp</dimen>
+    
+    <dimen name="message_pic_width">44dp</dimen>
+    <dimen name="message_text_size">18sp</dimen>
+
+</resources>

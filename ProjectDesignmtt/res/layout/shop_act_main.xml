@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+    
+      <android.support.v4.view.ViewPager
+        android:id="@+id/shop_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+         <ImageView
+            android:id="@+id/shop_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/cursor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@drawable/menu_bg__shadow"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/shop_tv_guid1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_menu_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_edge_normal"
+                android:paddingTop="@dimen/padding_edge_normal"
+                android:text="基本信息"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/shop_tv_guid2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_menu_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_edge_normal"
+                android:paddingTop="@dimen/padding_edge_normal"
+                android:text="菜单"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/shop_tv_guid3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_menu_item"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_edge_normal"
+                android:paddingTop="@dimen/padding_edge_normal"
+                android:text="订单"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+  
+
+</LinearLayout>

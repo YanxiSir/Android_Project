@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/SelfInfoLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_edge_low"
+                android:text="手机号"
+                android:textColor="@color/line_left_color"
+                android:textSize="@dimen/line_left_size" />
+
+            <TextView
+                android:id="@+id/selfcontact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/padding_edge_low"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/line_right_color"
+                android:textSize="@dimen/line_left_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/padding_edge_low"
+            android:layout_marginRight="@dimen/padding_edge_low"
+            android:background="@color/main_bg_gray" />
+        <RelativeLayout
+            style="@style/SelfInfoLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_edge_low"
+                android:text="E-mail"
+                android:textColor="@color/line_left_color"
+                android:textSize="@dimen/line_left_size" />
+
+            <TextView
+                android:id="@+id/selfcontact_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:paddingRight="@dimen/padding_edge_low"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/line_right_color"
+                android:textSize="@dimen/line_left_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

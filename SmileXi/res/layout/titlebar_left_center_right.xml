@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_lcr_left_rel"
+        android:layout_width="@dimen/titlebar_height"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/titlebtn_bg"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/titlebar_lcr_left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/titlebar_lcr_center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/titlebar_text"
+        android:textSize="@dimen/titlebar_title_size"/>
+	 <RelativeLayout
+        android:id="@+id/titlebar_lcr_right_rel"
+        android:layout_width="@dimen/titlebar_height"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/titlebtn_bg"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/titlebar_lcr_right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

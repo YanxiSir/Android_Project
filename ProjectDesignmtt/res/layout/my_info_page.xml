@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="#EEEEE0" />
+     
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEE0" />
+     <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/Into_changeusername_page"
+           android:clickable="true">
+
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/username"
+          android:paddingLeft="10dp"
+          android:layout_centerVertical="true"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"           
+          />  
+       <TextView 
+            android:id="@+id/my_info_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xiaowu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+              /> 
+        <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/more"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"   
+          />     
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEE0" />
+     <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           >
+          <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/more"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"   
+          />
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/bindingtelnumber"
+          android:paddingLeft="10dp"
+          android:layout_centerVertical="true"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"           
+          />
+      <TextView 
+            android:id="@+id/bindingtelnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13998302873"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+              />       
+    </RelativeLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEE0" />
+     <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/change_password_rel"
+      android:clickable="true"
+      >
+
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingLeft="10dp"
+          android:text="@string/change_password"
+          android:layout_centerVertical="true" 
+                      
+          />     
+      <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/more"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"   
+          />   
+    </RelativeLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEE0" />
+        
+    <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="20dp"
+         android:background="#FF9900"
+        >
+         <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/log_out"
+         android:gravity="center"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+         />
+    </LinearLayout>
+    
+</LinearLayout>

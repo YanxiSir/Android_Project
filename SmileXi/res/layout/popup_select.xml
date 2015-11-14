@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/filter_width"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg_gray"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/popup_select_listview"
+        android:layout_width="@dimen/filter_width"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_gray"
+        android:divider="@color/divider_line"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

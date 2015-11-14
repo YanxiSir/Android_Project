@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<TextView 
+	    android:id="@+id/ians_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="8dp"
+	    android:textColor="@color/text_gray"
+	    android:clickable="true"
+	    android:background="@drawable/line_bg"
+	    android:textSize="15sp"
+	    android:text="你为什么在这里?"/>
+    <LinearLayout
+        android:id="@+id/ians_main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="14dp"
+        android:paddingTop="12dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ians_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/defaultheader" />
+
+            <TextView
+                android:id="@+id/ians_zan_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/zan_bg"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ians_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YanxiSir"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ians_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="莫非印证了萱萱的偷偷是哈斯阿飞就拉上减肥啦设计费拉设计费机叫撒法兰姬阿什利放假阿里放假啦放假阿隆索发"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

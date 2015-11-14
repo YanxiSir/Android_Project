@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paddingTenTweenStype"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/iqa_type_ll"
+        style="@style/questionClickBackStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/iqa_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自 计算机"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/iqa_username"
+        style="@style/questionClickBackStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="YanxiSir 提问"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/iqa_title"
+        style="@style/questionClickBackStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="为什么苹果手机的各项参数都比国产手机低，但是我感觉运行却更流畅?"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/iqa_count"
+        style="@style/questionClickBackStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"
+        android:text="35人关注了该问题"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp" />
+
+</LinearLayout>
